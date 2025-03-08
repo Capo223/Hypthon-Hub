@@ -183,7 +183,7 @@ end
     --------------------------------------------------------------------------------FISH------------------------------------------------------------------------------------------
 
         
-local discord = "https://discord.gg/EFthQVGrFQ"
+local discord = "https://discord.com/invite/PXCD5NCY9t"
 
 Tabs.Main:AddParagraph({
         Title = "-----[Universal]-----",
@@ -1445,8 +1445,12 @@ local Locations = {
     ["Statue of Sovereignty"] = CFrame.new(26, 159, -1037),
     ["Forsaken Shores"] = CFrame.new(-2655, 183, 1671),
     ["The Depths"] = CFrame.new(502, -707, 1234),
-    ["Anchient Isle"] = CFrame.new(6056, 196, 283),
-    ["Grand Reef"] = CFrame.new(-3596, 154, 522)
+    ["Ancient Isle"] = CFrame.new(6056, 196, 283),
+    ["Grand Reef"] = CFrame.new(-3596, 154, 522),
+    ["Oil Rig"] = CFrame.new(-1942.39, 226.59, -475.94),
+    ["Abyssal Zenith"] = CFrame.new(-13525.45, -11048.29, 167.88),
+    ["Calm zone"] = CFrame.new(-4363.45, -11183.53, 3620.57),
+    ["Forsaken veil"] = CFrame.new(-2170.14, -11217.73, 7063.92)
 }
 
 local subLocations = {
