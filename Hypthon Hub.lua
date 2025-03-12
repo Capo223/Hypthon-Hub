@@ -185,6 +185,37 @@ end
         
 local discord = "https://discord.com/invite/PXCD5NCY9t"
 
+
+-- Add Dropdown at the top in "Main" tab
+local LevelDupeDropdown = Tabs.Main:AddDropdown("LevelDupeDropdown", {
+    Title = "Level dupe [risk]",
+    Values = {"Start", "Stop"},
+    Multi = false,
+    Default = "Stop",
+})
+
+local running = false
+
+-- Function to toggle loop on/off
+local function toggleLoop(value)
+    running = (value == "Start")
+    print("Loop", running and "Started" or "Stopped")
+end
+
+LevelDupeDropdown:OnChanged(function(value)
+    toggleLoop(value)
+end)
+
+-- Script Execution
+task.spawn(function()
+    while true do
+        if running then
+            workspace.world.npcs.Agaric.Agaric.complete:InvokeServer()
+        end
+        task.wait()
+    end
+end)
+
 Tabs.Main:AddParagraph({
         Title = "-----[Universal]-----",
         Content = ""
